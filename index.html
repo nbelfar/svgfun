@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="svgfun.css" type="text/css" />
+</head>
+<body>
+	<div id="main">
+		<svg id="svgmain" version="1.1" viewBox="0 0 400 400">
+			
+			<!--Head-->
+			<circle fill="white" stroke="grey" stroke-width="1" cx="200" cy="50" r="20" opacity="transparent"/>
+			
+			<!--Hat-->
+			<g>
+				<ellipse cx="200" cy="19" rx="19" ry="5"/>
+				<rect x="181" y="18" width="38" height="20"/>
+				<ellipse cx="200" cy="37" rx="25" ry="5"/>
+				<animateTransform attributeName="transform" 
+                          attributeType="XML"
+                          type="rotate" 
+						  values="0 225 37;30 224 64;0 225 37"
+                          dur="3s"
+                          repeatCount="indefinite"/>
+			</g>
+			
+			<!--Body-->
+			<line x1="200" y1="70" x2="200" y2="120" stroke="grey" stroke-width="1"/>
+			
+			<!--Arms-->
+			<line x1="199" y1="75" x2="199" y2="115" stroke="grey" stroke-width="1"/>
+			<line x1="200" y1="75" x2="217" y2="65" stroke="grey" stroke-width="1"/>
+			<line x1="217" y1="65" x2="223" y2="40" stroke="grey" stroke-width="1">
+				<animateTransform attributeName="transform" 
+                          attributeType="XML"
+                          type="rotate" 
+						  values="0 217 65;30 217 65;0 217 65"
+                          dur="3s"
+                          repeatCount="indefinite"/>
+			</line>
+			
+			<!--Bowtie-->
+			<g id="bowtie">
+				<polygon points="200,72 195,70 195,74"/>
+				<polygon points="199,71 199,73 201,73 201,71"/>
+				<polygon points="200,72 205,70 205,74"/>
+			</g>
+
+			<!--Legs-->
+			<line x1="200" y1="120" x2="185" y2="150" stroke="grey" stroke-width="1"/>
+			<line x1="200" y1="120" x2="215" y2="150" stroke="grey" stroke-width="1"/>
+		</svg>
+	</div>
+</body>
+</html>
