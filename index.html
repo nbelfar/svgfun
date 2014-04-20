@@ -68,6 +68,10 @@
 					dur="2s"
 					fill="freeze"
 				/>
+				<set id="show" attributeName="visibility" attributeType="CSS" to="visible"
+					 begin="0s; hide.end" dur=".05s" fill="freeze"/>
+				<set id="hide" attributeName="visibility" attributeType="CSS" to="hidden"
+					 begin="show.end" dur=".05s" fill="freeze"/>
 			</text>
 		</svg>
 	</div>
