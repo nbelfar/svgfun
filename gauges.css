@@ -1,0 +1,13 @@
+
+#mainDiv {
+	display:inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 75%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+#needle {
+	fill: grey;
+}

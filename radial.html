@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SVG Test</title>
+	<link rel="stylesheet" href="gauges.css" type="text/css">
+</head>
+<body>
+	<div id="mainDiv">
+		<svg id="mainSVG" version="1.1" viewBox="0 0 800 800" class="svg-content">
+			<!--<circle cx="400" cy="400" r="300" stroke="grey" fill="transparent" stroke-width="20" />
+			<circle cx="400" cy="400" r="275" stroke="grey" fill="transparent" stroke-width="20" />-->
+			<circle cx="400" cy="400" r="5" stroke="grey" fill="grey" stroke-width="10" />
+			<polygon id="needle" points="400 390, 150 400, 400 410">
+				<animateTransform attributeName="transform"
+									attributeType="XML"
+									type="rotate"
+									from="0 400 400"
+									to="180 400 400"
+									dur="10s"
+									repeatCount="indefinite" />
+			</polygon>
+			
+			<!--x = centerX - r*cos(thetaInRadians), y = centerY - r*sin(thetaInRadians)-->
+			<path d="M100 400 
+					A 300 300 0 0 1 700 400" fill="transparent" stroke="grey" stroke-width="20" />
+			<path d="M125 400 
+					A 275 275 0 0 1 263.17 161.46" fill="transparent" stroke="#b3c95a" stroke-width="20" />
+			<path d="M263.17 161.46
+					A 275 275 0 0 1 537.5 161.8" fill="transparent" stroke="#fcdc3b" stroke-width="20" />
+			<path d="M537.5 161.8
+					A 275 275 0 0 1 675 400" fill="transparent" stroke="#ee5c42" stroke-width="20" />
+				
+			
+				
+		</svg>
+	</div>
+</body>
+</html>
